@@ -617,12 +617,32 @@ label {
   margin-top: 20px;
 }
 .intro_sub button{
-    padding: 10px 15px;
+    padding: 10px 20px;
     background: #000!important;
     color: #fff!important;
     border-radius: 10px;
+    margin-left: 10px;
+}
+.intro_sub{
+  display: flex;
 }
 .intro_sub p{
   padding: 10px 15px;
   margin-top: 20px;
+  width:70%;
+}
+.intro_sub h5{
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#intro_image{
+  position: relative;
+}
+
+#intro_image img{
+  position: absolute;
+  right:-19px;
+  bottom: 20px;
 }
