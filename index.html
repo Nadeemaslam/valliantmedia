@@ -1,0 +1,281 @@
+ <!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>valliant media</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="thumbnail-slider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".hamburger").click(function(){
+			  $(".wrapper").toggleClass("active")
+			})
+		});
+	</script>
+</head>
+<div class="wrapper">
+
+	<div class="top_navbar">
+		<div class="logo">
+<!-- 			<a href="#">Coding Market</a>
+ -->		</div>
+		<div class="top_menu">
+			<div class="Search">
+				<label class="search_input"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search icons</span></label>
+				    <input id="search_box" class="form-control input-lg" placeholder="search" autocomplete="off" spellcheck="false" autocorrect="off" tabindex="1">
+			</div>
+			<div class="right_info">
+				<div class="icon_wrap">
+					<div class="icon one">
+						<i class="fas fa-bell"></i>
+					</div>
+				</div>
+				<div class="icon_wrap">
+					<div class="icon two">
+						<i class="fas fa-cog"></i>
+					</div>
+				</div>
+				<div class="">
+					<div class="icon three">
+						 <figcaption>
+						    <div class="fig-author-figure-title author_name">Profile Name</div>
+						    <div class="fig-author-figure-title author_title">Engineer</div>
+						  </figcaption>
+					</div>
+				</div>
+				<div class="">
+					<div class="icon four">
+						<figure class="fir-image-figure">
+				  
+						   <span class="fir-imageover" target="_blank">
+						    <img class="fir-author-image fir-clickcircle" src="images/avatar.png" alt="Author">
+						    <div class="fir-imageover-color"></div>
+						  </span>
+						</figure>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="main_body">
+
+		<div class="sidebar_menu">
+	        <div class="inner__sidebar_menu">
+
+	        	<ul>
+		          <li>
+		            <a href="#">
+		              <span class="icon">
+		              	<i class="fas fa-border-all"></i></span>
+		            </a>
+		          </li>
+		          <li>
+		            <a href="#" class="active">
+		              <span class="icon"><i class="fas fa-home"></i></span>
+		            </a>
+		          </li>
+		          <li>
+		            <a href="#">
+		              <span class="icon"><i class="fas fa-address-book"></i></span>
+		            </a>
+		          </li>
+		          <li>
+		            <a href="#">
+		              <span class="icon"><i class="fas fa-address-card"></i></span>
+		            </a>
+		          </li>
+		          <li>
+		            <a href="#">
+		              <span class="icon"><i class="fab fa-blogger"></i></span>
+		            </a>
+		          </li>
+		          <li>
+		            <a href="#">
+		              <span class="icon"><i class="fas  fa-cog"></i></span>
+		            </a>
+		          </li>
+		        </ul>
+
+		        <div class="hamburger">
+			        <div class="inner_hamburger">
+			            <span class="arrow">
+			                <i class="fas fa-long-arrow-alt-left"></i>
+			                <i class="fas fa-long-arrow-alt-right"></i>
+			            </span>
+			        </div>
+			    </div>
+
+	        </div>
+	    </div>
+
+	    <div class="container">
+	    	<div class="item_wrap intro_section">
+	    		<div class="item intro_sub">
+	    			<h5>Hi Clark Smith</h5>
+	    			<p>Welcome back clark smith.we are glad you are here.Inspire the best in team enabling them to achieve their goals.</p>
+	    			<button name="view">View Details</button>
+	    		</div>
+	    		<div class="trending_blogs_headline">
+		    			<div id="trending_blogs_left">Trending Blogs</div>
+		    			<div>view all</div>
+	    			</div>
+	    		<div class="trending_blogs">
+	    			<div class="trend_box"><h5>Prototyping</h5>
+	    					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, aliqua.</p>
+	    					<div class="trend_inner">
+	    					<div class="trend_inner_1"></div>
+	    					<div class="trend_inner_2"><i class="fa fa-thumbs-up" aria-hidden="true"></i></i></div>
+	    					<div class="trend_inner_3">1.2k</div>
+	    				</div>
+	    			</div>
+	    			<div class="active_block trend_box">
+	    				<h5>Typography</h5>
+	    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, aliqua. </p>
+	    				<div class="trend_inner">
+	    					<div class="trend_inner_1"></div>
+	    					<div class="trend_inner_2"><i class="fa fa-thumbs-up" aria-hidden="true"></i></div>
+	    					<div class="trend_inner_3">1.2k</div>
+	    				</div>
+	    			</div>
+	    			<div class="trend_box"> 
+	    				<h5>Color Pallete</h5>
+	    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+	    				<div class="trend_inner">
+	    					<div class="trend_inner_1"></div>
+	    					<div class="trend_inner_2"><i class="fa fa-thumbs-up" aria-hidden="true"></i></div>
+	    					<div class="trend_inner_3">1.2k</div>
+	    				</div>
+	    			</div>
+	    		</div>    		
+	    		<div class="blog_list">
+	    			<div class="blog_list_header">
+	    				<div class="blog_left">List of Blogs</div>
+	    				<div class="blog_center"></div>
+	    				<div class="blog_right">
+	    					<p>filter by </p>
+	    					<select id="status" name="Status">
+							  <option value="volvo">Status</option>
+							  <option value="volvo">Published</option>
+							  <option value="saab">Draft</option>
+							</select>
+							<select id="date" name="date">
+							  <option value="volvo">Date</option>
+							  <option value="volvo">today</option>
+							  <option value="saab">yesterday</option>
+							</select>
+	    				</div>
+	    			</div>
+	    			
+	    			    <table id="blog_table">
+						  <tr class="header">
+						    <th style="width:20%;">Date</th>
+						    <th style="width:60%;">Post Tilte</th>
+						    <th style="width:40%;">Status</th>
+						  </tr>
+						  <tr>
+						    <td>10/10/15</td>
+						    <td>Germany</td>
+						    <td>Germany</td>
+						  </tr>
+						  <tr class="active">
+						    <td>10/12/15</td>
+						    <td>Sweden</td>
+						    <td>Sweden</td>
+						  </tr>
+						  <tr>
+						    <td>10/02/15</td>
+						    <td>UK</td>
+						    <td>UK</td>
+						  </tr>
+						  <tr>
+						    <td>10/0815</td>
+						    <td>Germany</td>
+						    <td>Germany</td>
+						  </tr>
+						  <tr>
+						    <td>10/05/15</td>
+						    <td>Canada</td>
+						    <td>Canada</td>
+						  </tr>
+						</table>
+	    		</div>    		
+	    	</div>
+
+	    	<!--Right aside section-->
+	    	<div class="item_wrap right_aside_section">
+	    		<div class="item right_sub_1">
+	    			<div class="article_icon_1">
+	    				<i class="fa fa-blogger fa-2x" aria-hidden="true"></i>
+	    			</div>
+	    			<div class="article_title"> Articles Posted
+	    				<div class="article_number"> 80</div>
+	    			</div>
+	    			<div class="right_arrow_div"><img src="images/right_arrow.png"></div>
+	    			
+	    		</div>
+	    		<div class="item right_sub_2">
+	    			<div class="article_icon_2">
+	    				<i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>
+	    			</div>
+	    			<div class="article_title"> Claps this week
+	    				<div class="article_number"> 80</div>
+	    			</div>
+	    			<div class="right_arrow_div"> <img src="images/right_arrow.png"></div>
+	    			
+	    		</div>
+	    		<div class="item right_sub_3">
+	    			<div class="article_icon_3">
+	    				<i class="fa fa-users fa-2x" aria-hidden="true"></i>
+	    			</div>
+	    			<div class="article_title"> New Followers this week
+	    				<div class="article_number"> 80</div>
+	    			</div>
+	    			<div class="right_arrow_div"><img src="images/right_arrow.png"></div>
+	    			
+	    		</div>
+	    		<div>
+	    			<div class="followers_headline_section">
+		    			<div id="Followers_left">Followers</div>
+		    			<div>view all</div>
+	    			</div>
+	    			<!-- Slideshow container -->
+	    			<div id="thumbnail-slider">
+			            <div class="inner">
+			                <ul>
+			                    <li>
+			                        <a class="thumb" href="images/6.jpg"></a>
+			                    </li>
+			                    <li>
+			                        <a class="thumb" href="images/7.jpg"></a>
+			                    </li>
+			                    <li>
+			                        <a class="thumb" href="images/2.jpg"></a>
+			                    </li>
+			                    <li>
+			                        <a class="thumb" href="images/3.jpg"></a>
+			                    </li>
+			                    <li>
+			                        <a class="thumb" href="images/4.jpg"></a>
+			                    </li>
+			                </ul>
+			            </div>
+			        </div>
+						
+	    		</div>
+	    		<div class="item purchase_section">
+	    			<p>Buy Pro Account to explore Premium Features </p>
+	    			<button name="purchase Now">Purchase Now</button>
+	    		</div>
+	    		
+	    	</div>
+	    
+	    </div>
+	</div>
+</div>
+</body>
+</html>
